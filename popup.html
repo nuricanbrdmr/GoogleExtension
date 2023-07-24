@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+  <title>Saat Gösterici</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="popup.js"></script>
+</head>
+
+<body style="width: 700px; height: 400px;" ng-controller="myController">
+  <div id="clock"></div>
+
+  <p id="message"></p>
+  <div id="ticket">
+    <!-- <button type="button" id="basla">Başla</button>
+  <button type="button" id="bekle">Beklet</button>
+  <button type="button" id="dur">Durdur</button> -->
+  </div>
+
+  <!-- Tabloyu buraya ekleyin -->
+  <table id="eklentiTablosu" style="border: 1px solid black; text-align: center;">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Müşteri Personeli</th>
+        <th>Atanan Personel</th>
+        <th>Öncelik</th>
+        <!-- İşlemler sütunu burada kalabilir -->
+      </tr>
+    </thead>
+    <tbody>
+      
+    </tbody>
+  </table>
+</body>
+
+</html>

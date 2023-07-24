@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Saat Gösterici",
+  "version": "1.0",
+  "description": "Google Chrome için ticket eklentisi.",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "webNavigation",
+    "scripting"  
+  ],
+  "host_permissions": [
+    "https://demo.isteerp.com//*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://demo.isteerp.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
